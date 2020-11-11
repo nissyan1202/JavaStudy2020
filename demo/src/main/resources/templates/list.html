@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello!!</title>
+</head>
+<body>
+    <h1>HelloWorlda</h1>
+
+    <table border="1">
+        <tr><th>ID</th><th>NAME</th></tr>
+        <tr th:each="member : ${list}">
+            <td th:text="${member.id}"></td>
+            <td th:text="${member.name}"></td>
+        </tr>
+    
+    </table>
+
+    <input type="text" id="tel">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">    
+        window.onload = function(){
+            //alert("test2");
+            document.getElementById("tel").value = "aaaaa";
+        }
+
+        $(function() {
+            alert("testjquery");
+        });
+
+        </script>
+
+</body>
+</html>
